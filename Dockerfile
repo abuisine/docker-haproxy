@@ -1,7 +1,6 @@
 FROM haproxy:1.6
 MAINTAINER Alexandre Buisine <alexandrejabuisine@gmail.com>
 LABEL version="1.3.1"
-STOPSIGNAL SIGUSR1
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get -qq update \
  && apt-get install -yqq \
